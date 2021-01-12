@@ -25,4 +25,14 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+
+  const TV_Show_greeting = ['Well, could I be wearing any more clothes', 'Bears, beets, battlestar galactica', 'he is a transponster'];
+
+  const_random_greeting = TV_Show_greeting[Math.floor(Math.random() * greetings.length)];
+  
+  const tv_container = document.getElementById('tv_container');
+  tv_container.innerText = const_random_greeting;
+
+
+
 }
